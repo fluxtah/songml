@@ -15,36 +15,6 @@ FCPXML generator for generating overlays in lyric/chord videos
   - `..` for chord holds
   - `( … ) xN` for repeated progressions
 
-## 🛠️ Usage
-
-Clone and run:
-
-```bash
-./gradlew run
-```
-
-Or build a runnable JAR:
-
-```bash
-./gradlew shadowJar
-java -jar build/libs/songml-all.jar path/to/song.txt
-```
-
-## 🍺 Install via Homebrew
-
-Once you've set up a tap repo:
-
-```bash
-brew tap yourname/songml
-brew install songml
-```
-
-Then use it like:
-
-```bash
-songml path/to/song.txt
-```
-
 ## 🎤 Example Input
 
 ```text
