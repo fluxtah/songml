@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+<fcpxml version="1.13">
+  <resources>
+    <format id="r1" name="FFVideoFormat1080p30" frameDuration="100/3000s" width="1920" height="1080" colorSpace="1-1-1 (Rec. 709)"/>
+    <asset id="a1" name="royal_soldier.mp3" start="0s" duration="298.533s" hasVideo="0" hasAudio="1" format="r1">
+      <media-rep kind="original-media" src="file://localhost/royal_soldier.mp3"/>
+    </asset>
+    <effect id="r2" name="Graphic Text" uid=".../Titles.localized/Basic Text.localized/Graphic Text.localized/Graphic Text.moti"/>
+  </resources>
+  <library>
+    <event name="SongML">
+      <project name="Generated Song Overlay">
+        <sequence duration="298.533s" format="r1" tcStart="0s" tcFormat="NDF">
+          <spine>
+            <asset-clip name="royal_soldier.mp3" offset="0s" ref="a1" duration="298.533s" start="0s"/>
+<title name="Lead In" lane="0" offset="0.000s" duration="11.700s" ref="r2">
+  <text>
+    <text-style ref="tseb070086">Lead In</text-style>
+  </text>
+  <text-style-def id="tseb070086">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Next: Intro" lane="2" offset="10.200s" duration="1.500s" ref="r2">
+  <text>
+    <text-style ref="tsceee1435">Next: Intro</text-style>
+  </text>
+  <text-style-def id="tsceee1435">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Intro" lane="0" offset="11.700s" duration="23.400s" ref="r2">
+  <text>
+    <text-style ref="ts2f7ae5d2">Intro</text-style>
+  </text>
+  <text-style-def id="ts2f7ae5d2">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="D" lane="1" offset="11.700s" duration="0.600s" ref="r2">
+  <text>
+    <text-style ref="tsb5f4f7cb">D</text-style>
+  </text>
+  <text-style-def id="tsb5f4f7cb">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Am" lane="1" offset="12.300s" duration="0.600s" ref="r2">
+  <text>
+    <text-style ref="tsb03e5510">Am</text-style>
+  </text>
+  <text-style-def id="tsb03e5510">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="G" lane="1" offset="12.867s" duration="0.600s" ref="r2">
+  <text>
+    <text-style ref="tsa7b96c11">G</text-style>
+  </text>
+  <text-style-def id="tsa7b96c11">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="D" lane="1" offset="13.467s" duration="0.600s" ref="r2">
+  <text>
+    <text-style ref="ts1f99fc4b">D</text-style>
+  </text>
+  <text-style-def id="ts1f99fc4b">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="G" lane="1" offset="14.033s" duration="0.600s" ref="r2">
+  <text>
+    <text-style ref="ts1113ba6a">G</text-style>
+  </text>
+  <text-style-def id="ts1113ba6a">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Next: Bridge" lane="2" offset="33.633s" duration="1.500s" ref="r2">
+  <text>
+    <text-style ref="tsd7eb7909">Next: Bridge</text-style>
+  </text>
+  <text-style-def id="tsd7eb7909">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Bridge" lane="0" offset="35.133s" duration="23.400s" ref="r2">
+  <text>
+    <text-style ref="ts8215744b">Bridge</text-style>
+  </text>
+  <text-style-def id="ts8215744b">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="D" lane="1" offset="35.133s" duration="0.600s" ref="r2">
+  <text>
+    <text-style ref="ts58fd19e7">D</text-style>
+  </text>
+  <text-style-def id="ts58fd19e7">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Am" lane="1" offset="35.700s" duration="0.600s" ref="r2">
+  <text>
+    <text-style ref="ts1eebbe95">Am</text-style>
+  </text>
+  <text-style-def id="ts1eebbe95">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="G" lane="1" offset="36.300s" duration="0.600s" ref="r2">
+  <text>
+    <text-style ref="ts4acb68cd">G</text-style>
+  </text>
+  <text-style-def id="ts4acb68cd">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="D" lane="1" offset="36.867s" duration="0.600s" ref="r2">
+  <text>
+    <text-style ref="ts8e4765d0">D</text-style>
+  </text>
+  <text-style-def id="ts8e4765d0">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="G" lane="1" offset="37.467s" duration="0.600s" ref="r2">
+  <text>
+    <text-style ref="ts7fc29010">G</text-style>
+  </text>
+  <text-style-def id="ts7fc29010">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Next: Verse" lane="2" offset="57.033s" duration="1.500s" ref="r2">
+  <text>
+    <text-style ref="tsb7dfd99f">Next: Verse</text-style>
+  </text>
+  <text-style-def id="tsb7dfd99f">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Verse" lane="0" offset="58.533s" duration="23.400s" ref="r2">
+  <text>
+    <text-style ref="ts186cab3c">Verse</text-style>
+  </text>
+  <text-style-def id="ts186cab3c">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Next: Chorus" lane="2" offset="80.467s" duration="1.500s" ref="r2">
+  <text>
+    <text-style ref="ts9bb155dd">Next: Chorus</text-style>
+  </text>
+  <text-style-def id="ts9bb155dd">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Chorus" lane="0" offset="81.967s" duration="23.400s" ref="r2">
+  <text>
+    <text-style ref="ts118200e8">Chorus</text-style>
+  </text>
+  <text-style-def id="ts118200e8">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Next: Post-Chorus Bridge" lane="2" offset="103.867s" duration="1.500s" ref="r2">
+  <text>
+    <text-style ref="ts29c2270f">Next: Post-Chorus Bridge</text-style>
+  </text>
+  <text-style-def id="ts29c2270f">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Post-Chorus Bridge" lane="0" offset="105.367s" duration="11.700s" ref="r2">
+  <text>
+    <text-style ref="tseeed5923">Post-Chorus Bridge</text-style>
+  </text>
+  <text-style-def id="tseeed5923">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="D" lane="1" offset="105.367s" duration="0.600s" ref="r2">
+  <text>
+    <text-style ref="ts3e4fd96">D</text-style>
+  </text>
+  <text-style-def id="ts3e4fd96">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Am" lane="1" offset="105.967s" duration="0.600s" ref="r2">
+  <text>
+    <text-style ref="tsf20e0b94">Am</text-style>
+  </text>
+  <text-style-def id="tsf20e0b94">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="G" lane="1" offset="106.533s" duration="0.600s" ref="r2">
+  <text>
+    <text-style ref="ts15c24f15">G</text-style>
+  </text>
+  <text-style-def id="ts15c24f15">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="D" lane="1" offset="107.133s" duration="0.600s" ref="r2">
+  <text>
+    <text-style ref="ts6d93d8f5">D</text-style>
+  </text>
+  <text-style-def id="ts6d93d8f5">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="G" lane="1" offset="107.700s" duration="0.600s" ref="r2">
+  <text>
+    <text-style ref="ts4ac350f8">G</text-style>
+  </text>
+  <text-style-def id="ts4ac350f8">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Next: Bridge" lane="2" offset="115.567s" duration="1.500s" ref="r2">
+  <text>
+    <text-style ref="ts91f9fd1a">Next: Bridge</text-style>
+  </text>
+  <text-style-def id="ts91f9fd1a">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Bridge" lane="0" offset="117.067s" duration="23.400s" ref="r2">
+  <text>
+    <text-style ref="tscf5b4cae">Bridge</text-style>
+  </text>
+  <text-style-def id="tscf5b4cae">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="D" lane="1" offset="117.067s" duration="0.733s" ref="r2">
+  <text>
+    <text-style ref="tsd5685a74">D</text-style>
+  </text>
+  <text-style-def id="tsd5685a74">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Am" lane="1" offset="117.800s" duration="0.733s" ref="r2">
+  <text>
+    <text-style ref="tsc3aac2f3">Am</text-style>
+  </text>
+  <text-style-def id="tsc3aac2f3">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="D" lane="1" offset="118.533s" duration="0.733s" ref="r2">
+  <text>
+    <text-style ref="tsa939f19">D</text-style>
+  </text>
+  <text-style-def id="tsa939f19">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="G" lane="1" offset="119.267s" duration="0.733s" ref="r2">
+  <text>
+    <text-style ref="ts1c2d5355">G</text-style>
+  </text>
+  <text-style-def id="ts1c2d5355">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Next: Verse" lane="2" offset="139.000s" duration="1.500s" ref="r2">
+  <text>
+    <text-style ref="ts95d32e3c">Next: Verse</text-style>
+  </text>
+  <text-style-def id="ts95d32e3c">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Verse" lane="0" offset="140.500s" duration="11.700s" ref="r2">
+  <text>
+    <text-style ref="ts6286b59c">Verse</text-style>
+  </text>
+  <text-style-def id="ts6286b59c">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Next: Verse" lane="2" offset="150.700s" duration="1.500s" ref="r2">
+  <text>
+    <text-style ref="ts89e01738">Next: Verse</text-style>
+  </text>
+  <text-style-def id="ts89e01738">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Verse" lane="0" offset="152.200s" duration="11.700s" ref="r2">
+  <text>
+    <text-style ref="ts340a127a">Verse</text-style>
+  </text>
+  <text-style-def id="ts340a127a">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Next: Chorus" lane="2" offset="162.400s" duration="1.500s" ref="r2">
+  <text>
+    <text-style ref="ts51cf233">Next: Chorus</text-style>
+  </text>
+  <text-style-def id="ts51cf233">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Chorus" lane="0" offset="163.900s" duration="23.400s" ref="r2">
+  <text>
+    <text-style ref="tse24f190">Chorus</text-style>
+  </text>
+  <text-style-def id="tse24f190">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Next: Post-Chorus Bridge" lane="2" offset="185.833s" duration="1.500s" ref="r2">
+  <text>
+    <text-style ref="tsd2969868">Next: Post-Chorus Bridge</text-style>
+  </text>
+  <text-style-def id="tsd2969868">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Post-Chorus Bridge" lane="0" offset="187.333s" duration="11.700s" ref="r2">
+  <text>
+    <text-style ref="ts97c1ca7c">Post-Chorus Bridge</text-style>
+  </text>
+  <text-style-def id="ts97c1ca7c">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="D" lane="1" offset="187.333s" duration="0.600s" ref="r2">
+  <text>
+    <text-style ref="tsacb96eef">D</text-style>
+  </text>
+  <text-style-def id="tsacb96eef">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Am" lane="1" offset="187.900s" duration="0.600s" ref="r2">
+  <text>
+    <text-style ref="ts9ae1148d">Am</text-style>
+  </text>
+  <text-style-def id="ts9ae1148d">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="G" lane="1" offset="188.500s" duration="0.600s" ref="r2">
+  <text>
+    <text-style ref="tsbe96c42f">G</text-style>
+  </text>
+  <text-style-def id="tsbe96c42f">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="D" lane="1" offset="189.067s" duration="0.600s" ref="r2">
+  <text>
+    <text-style ref="ts165d0b0f">D</text-style>
+  </text>
+  <text-style-def id="ts165d0b0f">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="G" lane="1" offset="189.667s" duration="0.600s" ref="r2">
+  <text>
+    <text-style ref="tsf38deb72">G</text-style>
+  </text>
+  <text-style-def id="tsf38deb72">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Next: Interlude" lane="2" offset="197.533s" duration="1.500s" ref="r2">
+  <text>
+    <text-style ref="tsd6002408">Next: Interlude</text-style>
+  </text>
+  <text-style-def id="tsd6002408">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Interlude" lane="0" offset="199.033s" duration="23.400s" ref="r2">
+  <text>
+    <text-style ref="ts3d85a3ca">Interlude</text-style>
+  </text>
+  <text-style-def id="ts3d85a3ca">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="D" lane="1" offset="199.033s" duration="0.733s" ref="r2">
+  <text>
+    <text-style ref="ts7e3ccbcd">D</text-style>
+  </text>
+  <text-style-def id="ts7e3ccbcd">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Am" lane="1" offset="199.767s" duration="0.733s" ref="r2">
+  <text>
+    <text-style ref="ts6c755d6d">Am</text-style>
+  </text>
+  <text-style-def id="ts6c755d6d">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="D" lane="1" offset="200.500s" duration="0.733s" ref="r2">
+  <text>
+    <text-style ref="ts8fc39ed3">D</text-style>
+  </text>
+  <text-style-def id="ts8fc39ed3">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="G" lane="1" offset="201.233s" duration="0.733s" ref="r2">
+  <text>
+    <text-style ref="tsa15d4f4e">G</text-style>
+  </text>
+  <text-style-def id="tsa15d4f4e">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Next: Bridge" lane="2" offset="220.933s" duration="1.500s" ref="r2">
+  <text>
+    <text-style ref="ts85d76298">Next: Bridge</text-style>
+  </text>
+  <text-style-def id="ts85d76298">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Bridge" lane="0" offset="222.433s" duration="11.700s" ref="r2">
+  <text>
+    <text-style ref="tsc338b22c">Bridge</text-style>
+  </text>
+  <text-style-def id="tsc338b22c">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Next: Verse" lane="2" offset="232.633s" duration="1.500s" ref="r2">
+  <text>
+    <text-style ref="tsb821f3dc">Next: Verse</text-style>
+  </text>
+  <text-style-def id="tsb821f3dc">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Verse" lane="0" offset="234.133s" duration="23.400s" ref="r2">
+  <text>
+    <text-style ref="ts624bef1e">Verse</text-style>
+  </text>
+  <text-style-def id="ts624bef1e">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Next: Bridge" lane="2" offset="256.067s" duration="1.500s" ref="r2">
+  <text>
+    <text-style ref="tsfa62e553">Next: Bridge</text-style>
+  </text>
+  <text-style-def id="tsfa62e553">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Bridge" lane="0" offset="257.567s" duration="11.700s" ref="r2">
+  <text>
+    <text-style ref="ts36ae4b0">Bridge</text-style>
+  </text>
+  <text-style-def id="ts36ae4b0">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Next: Chorus" lane="2" offset="267.767s" duration="1.500s" ref="r2">
+  <text>
+    <text-style ref="tsa20da47d">Next: Chorus</text-style>
+  </text>
+  <text-style-def id="tsa20da47d">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Chorus" lane="0" offset="269.267s" duration="23.400s" ref="r2">
+  <text>
+    <text-style ref="tsdf6ef411">Chorus</text-style>
+  </text>
+  <text-style-def id="tsdf6ef411">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Next: Outro" lane="2" offset="291.167s" duration="1.500s" ref="r2">
+  <text>
+    <text-style ref="tsb2baa45b">Next: Outro</text-style>
+  </text>
+  <text-style-def id="tsb2baa45b">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+<title name="Outro" lane="0" offset="292.667s" duration="5.867s" ref="r2">
+  <text>
+    <text-style ref="ts288b4f66">Outro</text-style>
+  </text>
+  <text-style-def id="ts288b4f66">
+    <text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+  </text-style-def>
+</title>
+          </spine>
+        </sequence>
+      </project>
+    </event>
+  </library>
+</fcpxml>

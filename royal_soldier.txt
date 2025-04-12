@@ -1,0 +1,125 @@
+[Tempo]
+BPM: 82
+TimeSig: 4/4
+Swing: None
+
+[Lead In 4]
+
+[Intro 8]
+({D} .. {Am} .. {G} .. {D} {G}) x2
+
+[Bridge 8]
+{D} .. {Am} .. {G} .. {D} {G}
+
+Mi fada used to {D}chant pon da {Am}microphone
+Him chant a {D}left and a right and a {Am}left and a right
+Mi fada used to {D}chant pon da {Am}microphone
+Him chant a {D}left and a right and a {G}left and a right
+
+[Verse 8]
+When I was a pickney used to live in {D}Germany
+My fada was a {Am}Sergeant in the military
+Yeh a grease monkey with the {D}RCT
+Many time he gone on {Am}missions overland and overseas
+Every time he haffi {D}go he gotta leave the family
+Yes in the {Am}honour of the kingdom and the country
+He was a {D}soldier…
+For the {G}queen for England…
+
+[Chorus 8]
+Mi fada was a {D}soldier
+For the {Am}queen of England
+Yes him a royal {D}soldier
+For the {G}crown and kingdom
+
+Yeh my papa was a {D}soldier
+For the {Am}queen of England
+Yes him a royal {D}soldier
+For the {G}crown and kingdom
+
+[Post-Chorus Bridge 4]
+({D} .. {Am} .. {G} .. {D} {G})
+
+[Bridge 8]
+({D} {Am}) x3 {D} {G}
+
+You know my…
+My fada used to {D}chant pon de {Am}microphone
+{D}Left, right and left and a {Am}right
+My fada used to {D}chant pon de {Am}microphone
+{D}Left, right and left and a {G}right and attention!
+
+[Verse 4]
+Back in 86 wi {D}take a ship to England
+Livin inna town where {Am}dem a soldier overrun
+Them a drinking and a {D}fighting yeh they mash up anyone
+See the squaddie {G}yeh deh waitin pon di next mission
+
+[Verse 4]
+Waiting pon deh {D}military operation
+Signing up your {Am}daughter and they signing up your son
+Yeh deh shining up deh {D}boots and dem slinging up deh guns
+Yeh deh waiting pon na {G}call to deploy the squadron
+
+[Chorus 8]
+Dem a {D}soldier
+For the {Am}queen of England
+Yes a royal {D}soldier
+For the {G}crown and kingdom
+
+Yeh my papa was a {D}soldier
+For the {Am}queen of England
+Yes him a royal {D}soldier
+For the {G}crown and kingdom
+
+[Post-Chorus Bridge 4]
+({D} .. {Am} .. {G} .. {D} {G})
+
+[Interlude 8]
+({D} {Am}) x3 {D} {G}
+
+[Bridge 4]
+My fada used to {D}chant pon de {Am}microphone
+Left, right and {D}left and a right
+My fada used to {Am}chant pon de microphone
+Left, right and {D}left and a {G}attention
+
+[Verse 8]
+In my fada squad them used to call him {D}Geordie
+{REST}
+From when he was a youth him want to join the {Am}army
+{REST}
+Yeh in those times a {D}soldier was the only thing to be
+{REST}
+And all dem youth with {G}army fada army barmy
+{REST}
+
+[Bridge 4]
+Yes me a military {D}brat the army was my destiny
+Tho at the {Am}office them a say…
+Yes at the office them a {D}say you're only good for infantry
+{G}Yeahh!
+
+[Chorus 8]
+Mi fada was a {D}soldier
+For the {Am}queen of England
+Yes a royal {D}soldier
+For the {G}crown and kingdom
+
+Yeh my papa was a {D}soldier
+For the {Am}queen of England
+Yes a royal {D}soldier
+For the {G}crown and kingdom
+
+[Outro 2]
+{D} Yeh for the crown and Kingdom
+
+[Extra]
+Key: G
+Scales: D major, G major and Am
+Pattern: ({D} {Am}) x3 {D} {G}
+Notes: Optional live improv
+Guide Full: royal-soldier-full.mp3
+Guide No Bass: royal-soldier-no-bass.mp3
+Looping Version (OLD): Royal Soldier (Second Studio Live Looping Version)
+Band Version (OLD): Royal Soldier - C.O.P.E. - Live @ Rebel Inn Streatham 6th Feb 2025
