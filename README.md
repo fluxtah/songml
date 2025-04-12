@@ -1,6 +1,10 @@
 # 🎵 songml
 
-A Kotlin-based parser for a custom music markup format (SongML) – designed for musicians, looping artists, and visual creators. Parse structured song files with chords, lyrics, timing cues, and export-ready structure.
+A Kotlin-based parser for a custom music markup format (SongML) – designed for songwriters. 
+
+Parse structured song files with chords, lyrics, timing cues, and export-ready structure.
+
+FCPXML generator for generating overlays in lyric/chord videos
 
 ## ✨ Features
 
