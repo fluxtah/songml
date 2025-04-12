@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+<fcpxml version="1.13">
+	<resources>
+		<format id="r1" name="FFVideoFormat1080p30" frameDuration="100/3000s" width="1920" height="1080" colorSpace="1-1-1 (Rec. 709)"/>
+		<asset id="a1" name="royal_soldier.mp3" start="0s" duration="298.533s" hasVideo="0" hasAudio="1" format="r1">
+			<media-rep kind="original-media" src="file://localhost/royal_soldier.mp3"/>
+		</asset>
+		<effect id="r2" name="Graphic Text" uid=".../Titles.localized/Basic Text.localized/Graphic Text.localized/Graphic Text.moti"/>
+	</resources>
+	<library>
+		<event name="SongML">
+			<project name="Generated Song Overlay">
+				<sequence duration="298.533s" format="r1" tcStart="0s" tcFormat="NDF">
+					<spine>
+						<asset-clip name="royal_soldier.mp3" offset="0s" ref="a1" duration="298.533s" start="0s"/>
+						<title name="Lead In" lane="0" offset="0.000s" duration="11.700s" ref="r2">
+							<text>
+								<text-style ref="tseb070086">
+									Lead In
+								</text-style>
+							</text>
+							<text-style-def id="tseb070086">
+								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+							</text-style-def>
+						</title>
+						<title name="Intro" lane="0" offset="11.700s" duration="23.400s" ref="r2">
+							<text>
+								<text-style ref="ts2f7ae5d2">
+									Intro
+								</text-style>
+							</text>
+							<text-style-def id="ts2f7ae5d2">
+								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+							</text-style-def>
+						</title>
+						<title name="Bridge" lane="0" offset="35.133s" duration="23.400s" ref="r2">
+							<text>
+								<text-style ref="ts8215744b">
+									Bridge
+								</text-style>
+							</text>
+							<text-style-def id="ts8215744b">
+								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+							</text-style-def>
+						</title>
+						<title name="Verse" lane="0" offset="58.533s" duration="23.400s" ref="r2">
+							<text>
+								<text-style ref="ts186cab3c">
+									Verse
+								</text-style>
+							</text>
+							<text-style-def id="ts186cab3c">
+								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+							</text-style-def>
+						</title>
+						<title name="Chorus" lane="0" offset="81.967s" duration="23.400s" ref="r2">
+							<text>
+								<text-style ref="ts118200e8">
+									Chorus
+								</text-style>
+							</text>
+							<text-style-def id="ts118200e8">
+								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+							</text-style-def>
+						</title>
+						<title name="Post-Chorus Bridge" lane="0" offset="105.367s" duration="11.700s" ref="r2">
+							<text>
+								<text-style ref="tseeed5923">
+									Post-Chorus Bridge
+								</text-style>
+							</text>
+							<text-style-def id="tseeed5923">
+								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+							</text-style-def>
+						</title>
+						<title name="Bridge" lane="0" offset="117.067s" duration="23.400s" ref="r2">
+							<text>
+								<text-style ref="tscf5b4cae">
+									Bridge
+								</text-style>
+							</text>
+							<text-style-def id="tscf5b4cae">
+								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+							</text-style-def>
+						</title>
+						<title name="Verse" lane="0" offset="140.500s" duration="11.700s" ref="r2">
+							<text>
+								<text-style ref="ts6286b59c">
+									Verse
+								</text-style>
+							</text>
+							<text-style-def id="ts6286b59c">
+								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+							</text-style-def>
+						</title>
+						<title name="Verse" lane="0" offset="152.200s" duration="11.700s" ref="r2">
+							<text>
+								<text-style ref="ts340a127a">
+									Verse
+								</text-style>
+							</text>
+							<text-style-def id="ts340a127a">
+								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+							</text-style-def>
+						</title>
+						<title name="Chorus" lane="0" offset="163.900s" duration="23.400s" ref="r2">
+							<text>
+								<text-style ref="tse24f190">
+									Chorus
+								</text-style>
+							</text>
+							<text-style-def id="tse24f190">
+								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+							</text-style-def>
+						</title>
+						<title name="Post-Chorus Bridge" lane="0" offset="187.333s" duration="11.700s" ref="r2">
+							<text>
+								<text-style ref="ts97c1ca7c">
+									Post-Chorus Bridge
+								</text-style>
+							</text>
+							<text-style-def id="ts97c1ca7c">
+								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+							</text-style-def>
+						</title>
+						<title name="Interlude" lane="0" offset="199.033s" duration="23.400s" ref="r2">
+							<text>
+								<text-style ref="ts3d85a3ca">
+									Interlude
+								</text-style>
+							</text>
+							<text-style-def id="ts3d85a3ca">
+								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+							</text-style-def>
+						</title>
+						<title name="Bridge" lane="0" offset="222.433s" duration="11.700s" ref="r2">
+							<text>
+								<text-style ref="tsc338b22c">
+									Bridge
+								</text-style>
+							</text>
+							<text-style-def id="tsc338b22c">
+								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+							</text-style-def>
+						</title>
+						<title name="Verse" lane="0" offset="234.133s" duration="23.400s" ref="r2">
+							<text>
+								<text-style ref="ts624bef1e">
+									Verse
+								</text-style>
+							</text>
+							<text-style-def id="ts624bef1e">
+								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+							</text-style-def>
+						</title>
+						<title name="Bridge" lane="0" offset="257.567s" duration="11.700s" ref="r2">
+							<text>
+								<text-style ref="ts36ae4b0">
+									Bridge
+								</text-style>
+							</text>
+							<text-style-def id="ts36ae4b0">
+								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+							</text-style-def>
+						</title>
+						<title name="Chorus" lane="0" offset="269.267s" duration="23.400s" ref="r2">
+							<text>
+								<text-style ref="tsdf6ef411">
+									Chorus
+								</text-style>
+							</text>
+							<text-style-def id="tsdf6ef411">
+								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+							</text-style-def>
+						</title>
+						<title name="Outro" lane="0" offset="292.667s" duration="5.867s" ref="r2">
+							<text>
+								<text-style ref="ts288b4f66">
+									Outro
+								</text-style>
+							</text>
+							<text-style-def id="ts288b4f66">
+								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
+							</text-style-def>
+						</title>
+					</spine>
+				</sequence>
+			</project>
+		</event>
+	</library>
+</fcpxml>
