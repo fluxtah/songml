@@ -44,6 +44,16 @@ Mi fada used to {D}chant pon da {Am}microphone
 
 ---
 
+## 📘 SongML Format Reference
+
+Curious about the full grammar and syntax of SongML?
+
+👉 [Read the SongML Format Specification](./docs/songml-format.md)
+
+Covers chords, lyrics, repeats, section headers, metadata, and more.
+
+---
+
 ## 🛠️ Usage (CLI from JAR)
 
 ### 🧪 Run locally (for devs):
