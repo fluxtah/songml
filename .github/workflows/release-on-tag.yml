@@ -38,7 +38,7 @@ jobs:
         with:
           files: build/libs/songml-all.jar
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SONGML_TAP_TOKEN }}
 
   update-homebrew:
     runs-on: ubuntu-latest

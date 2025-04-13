@@ -4,6 +4,8 @@
 
 It parses structured song files with sections, chords, lyrics, repeats, and timing cues, and can generate **Final Cut Pro XML overlays** for video editing.
 
+---
+
 ## ✨ Features
 
 - Parses song sections like `[Verse 8]`, `[Chorus 4]`
@@ -15,6 +17,9 @@ It parses structured song files with sections, chords, lyrics, repeats, and timi
 - Clean lexer-style tokenizer (no regex)
 - Calculates tempo, total bars, and section timings
 - Generates FCPXML overlays for Final Cut Pro
+- Runnable via CLI or programmatically
+
+---
 
 ## 🎤 Example Input (SongML)
 
@@ -27,6 +32,8 @@ Mi fada used to {D}chant pon da {Am}microphone
 {D}Left, right and left and a {G}right
 ```
 
+---
+
 ## 📦 Example Output
 
 ```
@@ -35,37 +42,58 @@ Mi fada used to {D}chant pon da {Am}microphone
   TextLine: {D} Left, right and left and a {G} right
 ```
 
+---
+
 ## 🛠️ Usage (CLI from JAR)
 
-Build the fat JAR:
+### 🧪 Run locally (for devs):
 
 ```bash
 ./gradlew shadowJar
+java -jar build/libs/songml-all.jar --input song.txt --format fcpxml
 ```
 
-Then run:
-
-```bash
-java -jar build/libs/songml-all.jar --input royal_soldier.txt --format fcpxml
-```
-
-You can also provide an output filename:
+Optionally specify output path:
 
 ```bash
 java -jar build/libs/songml-all.jar --input song.txt --format fcpxml --output song.fcpxml
 ```
 
-This will generate a Final Cut Pro XML file with all chords and section markers.
+---
+
+## 🍺 Install via Homebrew
+
+You can install `songml` with:
+
+```bash
+brew tap fluxtah/songml
+brew install songml
+```
+
+Then run:
+
+```bash
+songml --input my_song.txt --format fcpxml
+```
+
+> 💡 Requires Java 17+. You can install it with:
+> ```bash
+> brew install openjdk
+> ```
+
+---
 
 ## 🔮 Roadmap Ideas
 
 - Export to `.srt`, `.ass`, `.html` lyric formats
-- Chord sheet visual renderer
+- Visual chord sheet renderer
 - Web-based editor for SongML
 - Tempo-aware looping/clip generator
+- Integration with live loopers (MIDI / OSC?)
+
+---
 
 ## 🤝 Contribute
 
-Open to ideas, PRs, and tune contributions.  
-One love, one structure, many songs. 🎶
-```
+PRs and tune contributions welcome.  
+One love. One format. Many songs. 🎶
