@@ -2,7 +2,7 @@
 
 **songml** is a Kotlin-based parser for a custom music markup format – designed for songwriters, live looping artists, and creators producing lyric/chord videos.
 
-It parses structured song files with sections, chords, lyrics, repeats, and timing cues, and can generate **Final Cut Pro XML overlays** for video editing.
+It parses structured song files with sections, chords, lyrics, repeats, and timing cues, and can generate **Final Cut Pro XML overlays** or **HTML lyric/chord sheets** for visual editing and performance.
 
 ---
 
@@ -16,7 +16,9 @@ It parses structured song files with sections, chords, lyrics, repeats, and timi
   - `( ... ) xN` for repeated patterns
 - Clean lexer-style tokenizer (no regex)
 - Calculates tempo, total bars, and section timings
-- Generates FCPXML overlays for Final Cut Pro
+- Generates:
+  - 🎬 FCPXML overlays for Final Cut Pro
+  - 📝 HTML lead sheets with aligned chords and lyrics
 - Runnable via CLI or programmatically
 
 ---
@@ -71,6 +73,17 @@ java -jar build/libs/songml-all.jar --input song.txt --format fcpxml --output so
 
 ---
 
+## 🎨 Output Formats (WIP)
+
+| Format   | Description                             | Output File       |
+|----------|-----------------------------------------|-------------------|
+| `fcpxml` | Final Cut Pro overlay titles             | `.fcpxml`         |
+| `html`   | Aligned chord/lyric HTML lead sheet     | `.html`           |
+
+More formats like `.srt`, `.ass`, and `.pdf` planned in the roadmap.
+
+---
+
 ## 🍺 Install via Homebrew
 
 You can install `songml` with:
@@ -90,16 +103,6 @@ songml --input my_song.txt --format fcpxml
 > ```bash
 > brew install openjdk
 > ```
-
----
-
-## 🔮 Roadmap Ideas
-
-- Export to `.srt`, `.ass`, `.html` lyric formats
-- Visual chord sheet renderer
-- Web-based editor for SongML
-- Tempo-aware looping/clip generator
-- Integration with live loopers (MIDI / OSC?)
 
 ---
 
