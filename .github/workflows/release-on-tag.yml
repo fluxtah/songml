@@ -1,35 +1,82 @@
-name: Release on Tag
+name: Build + Release + Homebrew
 
 on:
   release:
     types: [published]
 
 jobs:
-  build-and-upload:
+  build-and-release:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
+    outputs:
+      sha: ${{ steps.sha.outputs.sha }}
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up JDK
+      - name: Set up Java
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Grant execute permission for gradlew
+      - name: Grant gradlew permissions
         run: chmod +x ./gradlew
 
-      - name: Build Shadow JAR
+      - name: Build fat JAR
         run: ./gradlew shadowJar
 
-      - name: Upload JAR to Release
+      - name: Calculate SHA256
+        id: sha
+        run: |
+          SHA=$(shasum -a 256 build/libs/songml-all.jar | cut -d ' ' -f 1)
+          echo "sha=$SHA" >> "$GITHUB_OUTPUT"
+
+      - name: Upload JAR to GitHub Release
         uses: softprops/action-gh-release@v1
         with:
           files: build/libs/songml-all.jar
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  update-homebrew:
+    runs-on: ubuntu-latest
+    needs: build-and-release
+
+    steps:
+      - name: Clone homebrew tap repo
+        uses: actions/checkout@v3
+        with:
+          repository: fluxtah/homebrew-songml
+          token: ${{ secrets.SONGML_TAP_TOKEN }}
+          path: tap-repo
+
+      - name: Update songml.rb
+        run: |
+          VERSION=${GITHUB_REF##*/}
+          cat > tap-repo/Formula/songml.rb <<EOF
+          class Songml < Formula
+            desc "CLI tool to parse SongML format and generate lyric/chord overlays"
+            homepage "https://github.com/fluxtah/songml"
+            url "https://github.com/fluxtah/songml/releases/download/$VERSION/songml-all.jar"
+            sha256 "${{ needs.build-and-release.outputs.sha }}"
+            version "$VERSION"
+
+            depends_on "openjdk"
+
+            def install
+              libexec.install "songml-all.jar"
+              bin.write_jar_script libexec/"songml-all.jar", "songml"
+            end
+          end
+          EOF
+
+      - name: Commit and push formula
+        run: |
+          cd tap-repo
+          git config user.name "fluxtah-bot"
+          git config user.email "actions@github.com"
+          git add Formula/songml.rb
+          git commit -m "Update formula for $VERSION"
+          git push
