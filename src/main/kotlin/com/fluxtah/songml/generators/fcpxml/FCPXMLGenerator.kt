@@ -1,4 +1,4 @@
-package com.fluxtah.songml.writer.fcpxml
+package com.fluxtah.songml.generators.fcpxml
 
 import com.fluxtah.songml.model.Song
 import com.fluxtah.songml.model.TempoInfo

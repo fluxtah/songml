@@ -17,25 +17,21 @@ Mi fada used to {D}chant pon da {Am}microphone
 Him chant a {D}left and a right and a {G}left and a right
 
 [Verse 8]
-When I was a pickney used to live in {D}Germany
-My fada was a {Am}Sergeant in the military
-Yeh a grease monkey with the {D}RCT
-Many time he gone on {Am}missions overland and overseas
-Every time he haffi {D}go he gotta leave the family
-Yes in the {Am}honour of the kingdom and the country
-He was a {D}soldier…
-For the {G}queen for England…
+{D} When I was a pickney used to {Am}live in Germany
+My {D}fada was a Sergeant in the {Am}military
+Yeh a {D}grease monkey with the {Am}RCT
+Many {D}time he gone on missions over {G}land and overseas
+Every {D}time he haffi go he gotta {Am}leave the family
+Yes in the {D}honour of the kingdom  {Am} and the country
+He was a {D}soldier…  {Am}
+For the {D}queen for {G}England…
 
 [Chorus 8]
-Mi fada was a {D}soldier
-For the {Am}queen of England
-Yes him a royal {D}soldier
-For the {G}crown and kingdom
+Mi fada was a {D}soldier, {Am} for the {Am}queen of England
+Yes him a royal {D}soldier, for the {G}crown and kingdom
 
-Yeh my papa was a {D}soldier
-For the {Am}queen of England
-Yes him a royal {D}soldier
-For the {G}crown and kingdom
+Yeh my papa was a {D}soldier, for the {Am}queen of England
+Yes him a royal {D}soldier, for the {G}crown and kingdom
 
 [Post-Chorus Bridge 4]
 ({D} .. {Am} .. {G} .. {D} {G})
@@ -115,6 +111,7 @@ For the {G}crown and kingdom
 {D} Yeh for the crown and Kingdom
 
 [Extra]
+Title: Royal Soldier
 Key: G
 Scales: D major, G major and Am
 Pattern: ({D} {Am}) x3 {D} {G}
