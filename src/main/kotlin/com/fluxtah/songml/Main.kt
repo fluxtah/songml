@@ -1,11 +1,43 @@
+package com.fluxtah.songml
 
-import com.fluxtah.songml.model.ParsedLine
 import com.fluxtah.songml.parser.SongParser
-import com.fluxtah.songml.model.Token
 import com.fluxtah.songml.writer.fcpxml.FCPXMLGenerator
-import com.fluxtah.songml.writer.fcpxml.getBarDuration
 import java.io.File
 
+fun main(args: Array<String>) {
+    val argMap = args
+        .toList()
+        .chunked(2)
+        .filter { it.size == 2 }
+        .associate { it[0] to it[1] }
+
+    val input = argMap["--input"]
+    val format = argMap["--format"] ?: "fcpxml"
+    val output = argMap["--output"]
+
+    if (input == null) {
+        println("❌ Error: --input is required.")
+        println("Usage: songml --input file.txt [--format fcpxml] [--output file.fcpxml]")
+        return
+    }
+
+    val song = SongParser.parse(File(input).readLines())
+
+    when (format.lowercase()) {
+        "fcpxml" -> {
+            val audioFile = input.replace(".txt", ".mp3") // placeholder logic
+            val fcpxml = FCPXMLGenerator(song, audioFile).generate()
+            val outFile = output ?: input.replace(".txt", ".fcpxml")
+            File(outFile).writeText(fcpxml)
+            println("✅ FCPXML written to $outFile")
+        }
+        else -> {
+            println("❌ Unsupported format: $format")
+        }
+    }
+}
+
+/**
 fun testGenerateFCPXML() {
     val songLines = File("royal_soldier.txt").readLines()
     val song = SongParser.parse(songLines)
@@ -21,9 +53,10 @@ fun testGenerateFCPXML() {
     File("royal_soldier2.fcpxml").writeText(fcpxml)
     println("✅ FCPXML exported to royal_soldier.fcpxml")
 }
+
 fun main() {
     testGenerateFCPXML()
-  //   testParsing()
+    //   com.fluxtah.songml.testParsing()
 }
 
 private fun testParsing() {
@@ -64,3 +97,4 @@ private fun testParsing() {
         println("${line.key}: ${line.value}")
     }
 }
+*/

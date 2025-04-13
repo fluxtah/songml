@@ -35,21 +35,27 @@ Mi fada used to {D}chant pon da {Am}microphone
   TextLine: {D} Left, right and left and a {G} right
 ```
 
-## 🛠️ Usage (Code Example)
+## 🛠️ Usage (CLI from JAR)
 
-```kotlin
-    val songLines = File("royal_soldier.txt").readLines()
-    val song = SongParser.parse(songLines)
+Build the fat JAR:
 
-    println("Tempo: ${song.tempo}")
-    println("Total Bars: ${song.totalBars}")
-    println("First Section Starts At: ${song.sections.firstOrNull()?.startTimeSeconds} sec")
-
-    val audioFilename = "royal_soldier.mp3"
-    val fcpxml = FCPXMLGenerator(song, audioFilename).generate()
-
-    File("royal_soldier.fcpxml").writeText(fcpxml)
+```bash
+./gradlew shadowJar
 ```
+
+Then run:
+
+```bash
+java -jar build/libs/songml-all.jar --input royal_soldier.txt --format fcpxml
+```
+
+You can also provide an output filename:
+
+```bash
+java -jar build/libs/songml-all.jar --input song.txt --format fcpxml --output song.fcpxml
+```
+
+This will generate a Final Cut Pro XML file with all chords and section markers.
 
 ## 🔮 Roadmap Ideas
 
@@ -62,3 +68,4 @@ Mi fada used to {D}chant pon da {Am}microphone
 
 Open to ideas, PRs, and tune contributions.  
 One love, one structure, many songs. 🎶
+```
