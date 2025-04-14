@@ -3,186 +3,458 @@
 <fcpxml version="1.13">
 	<resources>
 		<format id="r1" name="FFVideoFormat1080p30" frameDuration="100/3000s" width="1920" height="1080" colorSpace="1-1-1 (Rec. 709)"/>
-		<asset id="a1" name="royal_soldier.mp3" start="0s" duration="298.533s" hasVideo="0" hasAudio="1" format="r1">
+		<asset id="a1" name="royal_soldier.mp3" start="0s" duration="8956/30s" hasVideo="0" hasAudio="1" format="r1">
 			<media-rep kind="original-media" src="file://localhost/royal_soldier.mp3"/>
 		</asset>
 		<effect id="r2" name="Graphic Text" uid=".../Titles.localized/Basic Text.localized/Graphic Text.localized/Graphic Text.moti"/>
 	</resources>
 	<library>
 		<event name="SongML">
-			<project name="Generated Song Overlay">
-				<sequence duration="298.533s" format="r1" tcStart="0s" tcFormat="NDF">
+			<project name="Royal Soldier">
+				<sequence duration="8956/30s" format="r1" tcStart="0s" tcFormat="NDF">
 					<spine>
-						<asset-clip name="royal_soldier.mp3" offset="0s" ref="a1" duration="298.533s" start="0s"/>
-						<title name="Lead In" lane="0" offset="0.000s" duration="11.700s" ref="r2">
+						<asset-clip name="royal_soldier.mp3" offset="0s" ref="a1" duration="8956/30s" start="0s" lane="-1"/>
+						<title name="Lead In" lane="0" offset="0/30s" duration="351/30s" ref="r2">
 							<text>
-								<text-style ref="tseb070086">
+								<text-style ref="ts_sec0">
 									Lead In
 								</text-style>
 							</text>
-							<text-style-def id="tseb070086">
+							<text-style-def id="ts_sec0">
 								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
 							</text-style-def>
+							<title name="" lane="1" offset="0s" duration="351/30s" ref="r2">
+								<text>
+									<text-style ref="cs_sec0"/>
+								</text>
+								<text-style-def id="cs_sec0">
+									<text-style font="Helvetica Neue" fontSize="48" fontColor="1 1 1 1" bold="1" alignment="center"/>
+								</text-style-def>
+							</title>
 						</title>
-						<title name="Intro" lane="0" offset="11.700s" duration="23.400s" ref="r2">
+						<title name="Intro" lane="0" offset="351/30s" duration="702/30s" ref="r2">
 							<text>
-								<text-style ref="ts2f7ae5d2">
+								<text-style ref="ts_sec1">
 									Intro
 								</text-style>
 							</text>
-							<text-style-def id="ts2f7ae5d2">
+							<text-style-def id="ts_sec1">
 								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
 							</text-style-def>
+							<title name="( D .. Am .. G .. D G ) x2" lane="1" offset="0s" duration="702/30s" ref="r2">
+								<text>
+									<text-style ref="cs_sec1">
+										( D .. Am .. G .. D G ) x2
+									</text-style>
+								</text>
+								<text-style-def id="cs_sec1">
+									<text-style font="Helvetica Neue" fontSize="48" fontColor="1 1 1 1" bold="1" alignment="center"/>
+								</text-style-def>
+							</title>
 						</title>
-						<title name="Bridge" lane="0" offset="35.133s" duration="23.400s" ref="r2">
+						<title name="Bridge" lane="0" offset="1054/30s" duration="702/30s" ref="r2">
 							<text>
-								<text-style ref="ts8215744b">
+								<text-style ref="ts_sec2">
 									Bridge
 								</text-style>
 							</text>
-							<text-style-def id="ts8215744b">
+							<text-style-def id="ts_sec2">
 								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
 							</text-style-def>
+							<title name="D .. Am .. G .. D G
+Mi fada used to  chant pon da  microphone
+Him chant a  left and a right and a  left and a right
+Mi fada used to  chant pon da  microphone
+Him chant a  left and a right and a  left and a right" lane="1" offset="0s" duration="702/30s" ref="r2">
+								<text>
+									<text-style ref="cs_sec2">
+										D .. Am .. G .. D G
+Mi fada used to  chant pon da  microphone
+Him chant a  left and a right and a  left and a right
+Mi fada used to  chant pon da  microphone
+Him chant a  left and a right and a  left and a right
+									</text-style>
+								</text>
+								<text-style-def id="cs_sec2">
+									<text-style font="Helvetica Neue" fontSize="48" fontColor="1 1 1 1" bold="1" alignment="center"/>
+								</text-style-def>
+							</title>
 						</title>
-						<title name="Verse" lane="0" offset="58.533s" duration="23.400s" ref="r2">
+						<title name="Verse" lane="0" offset="1756/30s" duration="702/30s" ref="r2">
 							<text>
-								<text-style ref="ts186cab3c">
+								<text-style ref="ts_sec3">
 									Verse
 								</text-style>
 							</text>
-							<text-style-def id="ts186cab3c">
+							<text-style-def id="ts_sec3">
 								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
 							</text-style-def>
+							<title name="When I was a pickney used to  live in Germany
+My  fada was a Sergeant in the  military
+Yeh a  grease monkey with the  RCT
+Many  time he gone on missions over  land and overseas
+Every  time he haffi go he gotta  leave the family
+Yes in the  honour of the kingdom  and the country
+He was a  soldier…
+For the  queen for  England…" lane="1" offset="0s" duration="702/30s" ref="r2">
+								<text>
+									<text-style ref="cs_sec3">
+										When I was a pickney used to  live in Germany
+My  fada was a Sergeant in the  military
+Yeh a  grease monkey with the  RCT
+Many  time he gone on missions over  land and overseas
+Every  time he haffi go he gotta  leave the family
+Yes in the  honour of the kingdom  and the country
+He was a  soldier…
+For the  queen for  England…
+									</text-style>
+								</text>
+								<text-style-def id="cs_sec3">
+									<text-style font="Helvetica Neue" fontSize="48" fontColor="1 1 1 1" bold="1" alignment="center"/>
+								</text-style-def>
+							</title>
 						</title>
-						<title name="Chorus" lane="0" offset="81.967s" duration="23.400s" ref="r2">
+						<title name="Chorus" lane="0" offset="2459/30s" duration="702/30s" ref="r2">
 							<text>
-								<text-style ref="ts118200e8">
+								<text-style ref="ts_sec4">
 									Chorus
 								</text-style>
 							</text>
-							<text-style-def id="ts118200e8">
+							<text-style-def id="ts_sec4">
 								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
 							</text-style-def>
+							<title name="Mi fada was a  soldier,  for the  queen of England
+Yes him a royal  soldier, for the  crown and kingdom
+Yeh my papa was a  soldier, for the  queen of England
+Yes him a royal  soldier, for the  crown and kingdom" lane="1" offset="0s" duration="702/30s" ref="r2">
+								<text>
+									<text-style ref="cs_sec4">
+										Mi fada was a  soldier,  for the  queen of England
+Yes him a royal  soldier, for the  crown and kingdom
+Yeh my papa was a  soldier, for the  queen of England
+Yes him a royal  soldier, for the  crown and kingdom
+									</text-style>
+								</text>
+								<text-style-def id="cs_sec4">
+									<text-style font="Helvetica Neue" fontSize="48" fontColor="1 1 1 1" bold="1" alignment="center"/>
+								</text-style-def>
+							</title>
 						</title>
-						<title name="Post-Chorus Bridge" lane="0" offset="105.367s" duration="11.700s" ref="r2">
+						<title name="Post-Chorus Bridge" lane="0" offset="3161/30s" duration="351/30s" ref="r2">
 							<text>
-								<text-style ref="tseeed5923">
+								<text-style ref="ts_sec5">
 									Post-Chorus Bridge
 								</text-style>
 							</text>
-							<text-style-def id="tseeed5923">
+							<text-style-def id="ts_sec5">
 								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
 							</text-style-def>
+							<title name="( D .. Am .. G .. D G )" lane="1" offset="0s" duration="351/30s" ref="r2">
+								<text>
+									<text-style ref="cs_sec5">
+										( D .. Am .. G .. D G )
+									</text-style>
+								</text>
+								<text-style-def id="cs_sec5">
+									<text-style font="Helvetica Neue" fontSize="48" fontColor="1 1 1 1" bold="1" alignment="center"/>
+								</text-style-def>
+							</title>
 						</title>
-						<title name="Bridge" lane="0" offset="117.067s" duration="23.400s" ref="r2">
+						<title name="Bridge" lane="0" offset="3512/30s" duration="702/30s" ref="r2">
 							<text>
-								<text-style ref="tscf5b4cae">
+								<text-style ref="ts_sec6">
 									Bridge
 								</text-style>
 							</text>
-							<text-style-def id="tscf5b4cae">
+							<text-style-def id="ts_sec6">
 								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
 							</text-style-def>
+							<title name="( D Am ) x3 D G
+You know my…
+My fada used to  chant pon de  microphone
+Left, right and left and a  right
+My fada used to  chant pon de  microphone
+Left, right and left and a  right and attention!" lane="1" offset="0s" duration="702/30s" ref="r2">
+								<text>
+									<text-style ref="cs_sec6">
+										( D Am ) x3 D G
+You know my…
+My fada used to  chant pon de  microphone
+Left, right and left and a  right
+My fada used to  chant pon de  microphone
+Left, right and left and a  right and attention!
+									</text-style>
+								</text>
+								<text-style-def id="cs_sec6">
+									<text-style font="Helvetica Neue" fontSize="48" fontColor="1 1 1 1" bold="1" alignment="center"/>
+								</text-style-def>
+							</title>
 						</title>
-						<title name="Verse" lane="0" offset="140.500s" duration="11.700s" ref="r2">
+						<title name="Verse" lane="0" offset="4215/30s" duration="351/30s" ref="r2">
 							<text>
-								<text-style ref="ts6286b59c">
+								<text-style ref="ts_sec7">
 									Verse
 								</text-style>
 							</text>
-							<text-style-def id="ts6286b59c">
+							<text-style-def id="ts_sec7">
 								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
 							</text-style-def>
+							<title name="Back in 86 wi  take a ship to England
+Livin inna town where  dem a soldier overrun
+Them a drinking and a  fighting yeh they mash up anyone
+See the squaddie  yeh deh waitin pon di next mission" lane="1" offset="0s" duration="351/30s" ref="r2">
+								<text>
+									<text-style ref="cs_sec7">
+										Back in 86 wi  take a ship to England
+Livin inna town where  dem a soldier overrun
+Them a drinking and a  fighting yeh they mash up anyone
+See the squaddie  yeh deh waitin pon di next mission
+									</text-style>
+								</text>
+								<text-style-def id="cs_sec7">
+									<text-style font="Helvetica Neue" fontSize="48" fontColor="1 1 1 1" bold="1" alignment="center"/>
+								</text-style-def>
+							</title>
 						</title>
-						<title name="Verse" lane="0" offset="152.200s" duration="11.700s" ref="r2">
+						<title name="Verse" lane="0" offset="4566/30s" duration="351/30s" ref="r2">
 							<text>
-								<text-style ref="ts340a127a">
+								<text-style ref="ts_sec8">
 									Verse
 								</text-style>
 							</text>
-							<text-style-def id="ts340a127a">
+							<text-style-def id="ts_sec8">
 								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
 							</text-style-def>
+							<title name="Waiting pon deh  military operation
+Signing up your  daughter and they signing up your son
+Yeh deh shining up deh  boots and dem slinging up deh guns
+Yeh deh waiting pon na  call to deploy the squadron" lane="1" offset="0s" duration="351/30s" ref="r2">
+								<text>
+									<text-style ref="cs_sec8">
+										Waiting pon deh  military operation
+Signing up your  daughter and they signing up your son
+Yeh deh shining up deh  boots and dem slinging up deh guns
+Yeh deh waiting pon na  call to deploy the squadron
+									</text-style>
+								</text>
+								<text-style-def id="cs_sec8">
+									<text-style font="Helvetica Neue" fontSize="48" fontColor="1 1 1 1" bold="1" alignment="center"/>
+								</text-style-def>
+							</title>
 						</title>
-						<title name="Chorus" lane="0" offset="163.900s" duration="23.400s" ref="r2">
+						<title name="Chorus" lane="0" offset="4917/30s" duration="702/30s" ref="r2">
 							<text>
-								<text-style ref="tse24f190">
+								<text-style ref="ts_sec9">
 									Chorus
 								</text-style>
 							</text>
-							<text-style-def id="tse24f190">
+							<text-style-def id="ts_sec9">
 								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
 							</text-style-def>
+							<title name="Dem a  soldier
+For the  queen of England
+Yes a royal  soldier
+For the  crown and kingdom
+Yeh my papa was a  soldier
+For the  queen of England
+Yes him a royal  soldier
+For the  crown and kingdom" lane="1" offset="0s" duration="702/30s" ref="r2">
+								<text>
+									<text-style ref="cs_sec9">
+										Dem a  soldier
+For the  queen of England
+Yes a royal  soldier
+For the  crown and kingdom
+Yeh my papa was a  soldier
+For the  queen of England
+Yes him a royal  soldier
+For the  crown and kingdom
+									</text-style>
+								</text>
+								<text-style-def id="cs_sec9">
+									<text-style font="Helvetica Neue" fontSize="48" fontColor="1 1 1 1" bold="1" alignment="center"/>
+								</text-style-def>
+							</title>
 						</title>
-						<title name="Post-Chorus Bridge" lane="0" offset="187.333s" duration="11.700s" ref="r2">
+						<title name="Post-Chorus Bridge" lane="0" offset="5620/30s" duration="351/30s" ref="r2">
 							<text>
-								<text-style ref="ts97c1ca7c">
+								<text-style ref="ts_sec10">
 									Post-Chorus Bridge
 								</text-style>
 							</text>
-							<text-style-def id="ts97c1ca7c">
+							<text-style-def id="ts_sec10">
 								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
 							</text-style-def>
+							<title name="( D .. Am .. G .. D G )" lane="1" offset="0s" duration="351/30s" ref="r2">
+								<text>
+									<text-style ref="cs_sec10">
+										( D .. Am .. G .. D G )
+									</text-style>
+								</text>
+								<text-style-def id="cs_sec10">
+									<text-style font="Helvetica Neue" fontSize="48" fontColor="1 1 1 1" bold="1" alignment="center"/>
+								</text-style-def>
+							</title>
 						</title>
-						<title name="Interlude" lane="0" offset="199.033s" duration="23.400s" ref="r2">
+						<title name="Interlude" lane="0" offset="5971/30s" duration="702/30s" ref="r2">
 							<text>
-								<text-style ref="ts3d85a3ca">
+								<text-style ref="ts_sec11">
 									Interlude
 								</text-style>
 							</text>
-							<text-style-def id="ts3d85a3ca">
+							<text-style-def id="ts_sec11">
 								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
 							</text-style-def>
+							<title name="( D Am ) x3 D G" lane="1" offset="0s" duration="702/30s" ref="r2">
+								<text>
+									<text-style ref="cs_sec11">
+										( D Am ) x3 D G
+									</text-style>
+								</text>
+								<text-style-def id="cs_sec11">
+									<text-style font="Helvetica Neue" fontSize="48" fontColor="1 1 1 1" bold="1" alignment="center"/>
+								</text-style-def>
+							</title>
 						</title>
-						<title name="Bridge" lane="0" offset="222.433s" duration="11.700s" ref="r2">
+						<title name="Bridge" lane="0" offset="6673/30s" duration="351/30s" ref="r2">
 							<text>
-								<text-style ref="tsc338b22c">
+								<text-style ref="ts_sec12">
 									Bridge
 								</text-style>
 							</text>
-							<text-style-def id="tsc338b22c">
+							<text-style-def id="ts_sec12">
 								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
 							</text-style-def>
+							<title name="My fada used to  chant pon de  microphone
+Left, right and  left and a right
+My fada used to  chant pon de microphone
+Left, right and  left and a  attention" lane="1" offset="0s" duration="351/30s" ref="r2">
+								<text>
+									<text-style ref="cs_sec12">
+										My fada used to  chant pon de  microphone
+Left, right and  left and a right
+My fada used to  chant pon de microphone
+Left, right and  left and a  attention
+									</text-style>
+								</text>
+								<text-style-def id="cs_sec12">
+									<text-style font="Helvetica Neue" fontSize="48" fontColor="1 1 1 1" bold="1" alignment="center"/>
+								</text-style-def>
+							</title>
 						</title>
-						<title name="Verse" lane="0" offset="234.133s" duration="23.400s" ref="r2">
+						<title name="Verse" lane="0" offset="7024/30s" duration="702/30s" ref="r2">
 							<text>
-								<text-style ref="ts624bef1e">
+								<text-style ref="ts_sec13">
 									Verse
 								</text-style>
 							</text>
-							<text-style-def id="ts624bef1e">
+							<text-style-def id="ts_sec13">
 								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
 							</text-style-def>
+							<title name="In my fada squad them used to call him  Geordie
+REST
+From when he was a youth him want to join the  army
+REST
+Yeh in those times a  soldier was the only thing to be
+REST
+And all dem youth with  army fada army barmy
+REST" lane="1" offset="0s" duration="702/30s" ref="r2">
+								<text>
+									<text-style ref="cs_sec13">
+										In my fada squad them used to call him  Geordie
+REST
+From when he was a youth him want to join the  army
+REST
+Yeh in those times a  soldier was the only thing to be
+REST
+And all dem youth with  army fada army barmy
+REST
+									</text-style>
+								</text>
+								<text-style-def id="cs_sec13">
+									<text-style font="Helvetica Neue" fontSize="48" fontColor="1 1 1 1" bold="1" alignment="center"/>
+								</text-style-def>
+							</title>
 						</title>
-						<title name="Bridge" lane="0" offset="257.567s" duration="11.700s" ref="r2">
+						<title name="Bridge" lane="0" offset="7727/30s" duration="351/30s" ref="r2">
 							<text>
-								<text-style ref="ts36ae4b0">
+								<text-style ref="ts_sec14">
 									Bridge
 								</text-style>
 							</text>
-							<text-style-def id="ts36ae4b0">
+							<text-style-def id="ts_sec14">
 								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
 							</text-style-def>
+							<title name="Yes me a military  brat the army was my destiny
+Tho at the  office them a say…
+Yes at the office them a  say you&apos;re only good for infantry
+Yeahh!" lane="1" offset="0s" duration="351/30s" ref="r2">
+								<text>
+									<text-style ref="cs_sec14">
+										Yes me a military  brat the army was my destiny
+Tho at the  office them a say…
+Yes at the office them a  say you&apos;re only good for infantry
+Yeahh!
+									</text-style>
+								</text>
+								<text-style-def id="cs_sec14">
+									<text-style font="Helvetica Neue" fontSize="48" fontColor="1 1 1 1" bold="1" alignment="center"/>
+								</text-style-def>
+							</title>
 						</title>
-						<title name="Chorus" lane="0" offset="269.267s" duration="23.400s" ref="r2">
+						<title name="Chorus" lane="0" offset="8078/30s" duration="702/30s" ref="r2">
 							<text>
-								<text-style ref="tsdf6ef411">
+								<text-style ref="ts_sec15">
 									Chorus
 								</text-style>
 							</text>
-							<text-style-def id="tsdf6ef411">
+							<text-style-def id="ts_sec15">
 								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
 							</text-style-def>
+							<title name="Mi fada was a  soldier
+For the  queen of England
+Yes a royal  soldier
+For the  crown and kingdom
+Yeh my papa was a  soldier
+For the  queen of England
+Yes a royal  soldier
+For the  crown and kingdom" lane="1" offset="0s" duration="702/30s" ref="r2">
+								<text>
+									<text-style ref="cs_sec15">
+										Mi fada was a  soldier
+For the  queen of England
+Yes a royal  soldier
+For the  crown and kingdom
+Yeh my papa was a  soldier
+For the  queen of England
+Yes a royal  soldier
+For the  crown and kingdom
+									</text-style>
+								</text>
+								<text-style-def id="cs_sec15">
+									<text-style font="Helvetica Neue" fontSize="48" fontColor="1 1 1 1" bold="1" alignment="center"/>
+								</text-style-def>
+							</title>
 						</title>
-						<title name="Outro" lane="0" offset="292.667s" duration="5.867s" ref="r2">
+						<title name="Outro" lane="0" offset="8780/30s" duration="176/30s" ref="r2">
 							<text>
-								<text-style ref="ts288b4f66">
+								<text-style ref="ts_sec16">
 									Outro
 								</text-style>
 							</text>
-							<text-style-def id="ts288b4f66">
+							<text-style-def id="ts_sec16">
 								<text-style font="Helvetica Neue" fontSize="96" fontColor="1 1 1 1" bold="1" alignment="center"/>
 							</text-style-def>
+							<title name="Yeh for the crown and Kingdom" lane="1" offset="0s" duration="176/30s" ref="r2">
+								<text>
+									<text-style ref="cs_sec16">
+										Yeh for the crown and Kingdom
+									</text-style>
+								</text>
+								<text-style-def id="cs_sec16">
+									<text-style font="Helvetica Neue" fontSize="48" fontColor="1 1 1 1" bold="1" alignment="center"/>
+								</text-style-def>
+							</title>
 						</title>
 					</spine>
 				</sequence>

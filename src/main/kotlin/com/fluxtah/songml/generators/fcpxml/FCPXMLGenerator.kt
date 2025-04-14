@@ -1,13 +1,21 @@
 package com.fluxtah.songml.generators.fcpxml
 
+import com.fluxtah.songml.model.ParsedLine
 import com.fluxtah.songml.model.Song
 import com.fluxtah.songml.model.TempoInfo
+import com.fluxtah.songml.model.Token
 import org.redundent.kotlin.xml.Node
 import org.redundent.kotlin.xml.XmlVersion
 import org.redundent.kotlin.xml.xml
 import kotlin.math.roundToInt
 
-class FCPXMLGenerator(val song: Song, val audioFilename: String? = null, val fps: Double = 30.0) {
+class FCPXMLGenerator(
+    val song: Song,
+    val audioFilename: String? = null,
+    val fps: Double = 30.0,
+    val includeLyrics: Boolean = true,
+    val includeChords: Boolean = true
+) {
 
     val barDuration = getBarDuration(song)
     val totalDuration = song.totalBars * barDuration
@@ -37,25 +45,37 @@ class FCPXMLGenerator(val song: Song, val audioFilename: String? = null, val fps
                             spine {
                                 assetClip()
 
-                                song.sections.forEachIndexed { index, section ->
-                                    val next = song.sections.getOrNull(index + 1)
+                                song.sections.forEachIndexed { sectionIndex, section ->
                                     val sectionStart = roundToFrame(section.startTimeSeconds, fps)
                                     val sectionDuration = maxOf(0.5, section.bars * barDuration)
-
-                                    // Section title (lane 0)
-                                    val titleText = section.name
-                                    val styleId = "ts" + (titleText + sectionStart + 0).hashCode().toUInt().toString(16)
                                     val durStr = roundToFrame(sectionDuration, fps)
 
-                                    title(titleText, sectionStart, durStr) {
+                                    val sectionStyleId = "ts_sec$sectionIndex"
+                                    val contentStyleId = "cs_sec$sectionIndex"
+
+                                    // SECTION TITLE pinned at top
+                                    title(section.name, sectionStart, durStr, lane = 0) {
                                         text {
-                                            textStyle(styleId, titleText)
+                                            textStyle(sectionStyleId, section.name)
                                         }
-                                        textStyleDef(styleId) {
-                                            textStyleDefTextStyle()
+                                        textStyleDef(sectionStyleId) {
+                                            textStyleDefTextStyle(fontSize = "96")
+                                        }
+
+                                        // CONTENT block: lyrics + chords together
+                                        val combinedContent = section.lines.joinToString("\n") { line ->
+                                            lineText(line)
+                                        }
+
+                                        title(combinedContent, "0s", durStr, lane = 1) {
+                                            text {
+                                                textStyle(contentStyleId, combinedContent)
+                                            }
+                                            textStyleDef(contentStyleId) {
+                                                textStyleDefTextStyle(fontSize = "48")
+                                            }
                                         }
                                     }
-                                    // Add chords and next preview the same way...
                                 }
                             }
                         }
@@ -65,10 +85,40 @@ class FCPXMLGenerator(val song: Song, val audioFilename: String? = null, val fps
         }.toString(true)
     }
 
-    private fun Node.textStyleDefTextStyle() {
+
+
+    private fun lineText(line: ParsedLine): String {
+        return when (line) {
+            is ParsedLine.TextLine -> line.tokens.joinToString(" ") {
+                when (it) {
+                    is Token.Chord -> ""
+                    is Token.Word -> it.text
+                    Token.Hold -> ".."
+                    Token.Rest -> "REST"
+                    is Token.Repeat -> "x${it.count}"
+                    Token.OpenParen -> "("
+                    Token.CloseParen -> ")"
+                }
+            }.trim()
+
+            is ParsedLine.ChordLine -> line.tokens.joinToString(" ") {
+                when (it) {
+                    is Token.Chord -> it.name
+                    Token.Hold -> ".."
+                    Token.Rest -> "REST"
+                    is Token.Repeat -> "x${it.count}"
+                    Token.OpenParen -> "("
+                    Token.CloseParen -> ")"
+                    else -> ""
+                }
+            }.trim()
+        }
+    }
+
+    private fun Node.textStyleDefTextStyle(fontSize: String = "96") {
         "text-style" {
             attribute("font", "Helvetica Neue")
-            attribute("fontSize", "96")
+            attribute("fontSize", fontSize)
             attribute("fontColor", "1 1 1 1")
             attribute("bold", "1")
             attribute("alignment", "center")
@@ -78,9 +128,10 @@ class FCPXMLGenerator(val song: Song, val audioFilename: String? = null, val fps
     private fun Node.textStyle(styleId: String, titleText: String) {
         "text-style" {
             attribute("ref", styleId)
-            -titleText
+            text(titleText)
         }
     }
+
 
     private fun Node.assetClip() {
         audioFilename?.let { name ->
@@ -90,6 +141,7 @@ class FCPXMLGenerator(val song: Song, val audioFilename: String? = null, val fps
                 attribute("ref", assetId)
                 attribute("duration", roundToFrame(totalDuration, fps))
                 attribute("start", "0s")
+                attribute("lane", "-1")
             }
         }
     }
@@ -146,7 +198,7 @@ class FCPXMLGenerator(val song: Song, val audioFilename: String? = null, val fps
 
     private fun Node.project(block: Node.() -> Unit = {}) {
         "project" {
-            attribute("name", "Generated Song Overlay")
+            attribute("name", song.titleOrFallback())
             block()
         }
     }
@@ -173,10 +225,10 @@ class FCPXMLGenerator(val song: Song, val audioFilename: String? = null, val fps
         }
     }
 
-    private fun Node.title(titleText: String, sectionStart: String, durStr: String, block: Node.() -> Unit = {}) {
+    private fun Node.title(titleText: String, sectionStart: String, durStr: String, lane: Int, block: Node.() -> Unit = {}) {
         "title" {
             attribute("name", titleText)
-            attribute("lane", "0")
+            attribute("lane", lane.toString())
             attribute("offset", sectionStart)
             attribute("duration", durStr)
             attribute("ref", EFFECT_ID)
@@ -211,9 +263,9 @@ fun frameDurationString(fps: Double): String {
 }
 
 fun roundToFrame(seconds: Double, fps: Double): String {
-    val frame = 1.0 / fps
-    val rounded = (seconds / frame).roundToInt() * frame
-    return "%.3fs".format(rounded)
+    val frames = (seconds * fps).roundToInt()
+    val denom = fps.toInt()
+    return "$frames/$denom" + "s"
 }
 
 fun getBarDuration(song: Song): Double {
@@ -222,3 +274,4 @@ fun getBarDuration(song: Song): Double {
     return beatsPerBar * (60.0 / tempo.bpm)
 }
 
+fun Song.titleOrFallback(): String = this.extra["Title"] ?: "Untitled Song"
