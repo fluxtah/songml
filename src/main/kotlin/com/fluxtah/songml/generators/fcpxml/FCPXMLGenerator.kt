@@ -53,8 +53,9 @@ class FCPXMLGenerator(
                                     val sectionStyleId = "ts_sec$sectionIndex"
                                     val contentStyleId = "cs_sec$sectionIndex"
 
-                                    // SECTION TITLE pinned at top
                                     title(section.name, sectionStart, durStr, lane = 0) {
+                                        backgroundOpacity()
+                                        alignTopLeft()
                                         text {
                                             textStyle(sectionStyleId, section.name)
                                         }
@@ -65,9 +66,10 @@ class FCPXMLGenerator(
                                         // CONTENT block: lyrics + chords together
                                         val combinedContent = section.lines.joinToString("\n") { line ->
                                             lineText(line)
-                                        }
+                                        }.trim()
 
                                         title(combinedContent, "0s", durStr, lane = 1) {
+                                            backgroundOpacity()
                                             text {
                                                 textStyle(contentStyleId, combinedContent)
                                             }
@@ -86,12 +88,11 @@ class FCPXMLGenerator(
     }
 
 
-
     private fun lineText(line: ParsedLine): String {
         return when (line) {
             is ParsedLine.TextLine -> line.tokens.joinToString(" ") {
                 when (it) {
-                    is Token.Chord -> ""
+                    is Token.Chord -> "[${it.name}]"
                     is Token.Word -> it.text
                     Token.Hold -> ".."
                     Token.Rest -> "REST"
@@ -161,6 +162,43 @@ class FCPXMLGenerator(
         }
     }
 
+    private fun Node.param(name: String, key: String, value: String) {
+        "param" {
+            attribute("name", name)
+            attribute("key", key)
+            attribute("value", value)
+        }
+    }
+
+    private fun Node.layoutMethodParagraph() =
+        param("Layout Method", "9999/10003/13260/3296675261/2/314", "1 (Paragraph)")
+
+    private fun Node.leftRightMargins(left: String = "-1730", right: String = "1730") {
+        param("Left Margin", "9999/10003/13260/3296675261/2/323", left)
+        param("Right Margin", "9999/10003/13260/3296675261/2/324", right)
+    }
+
+    private fun Node.topBottomMargins(top: String = "960", bottom: String = "-960") {
+        param("Top Margin", "9999/10003/13260/3296675261/2/325", top)
+        param("Bottom Margin", "9999/10003/13260/3296675261/2/326", bottom)
+    }
+
+    private fun Node.autoShrinkToMargins() =
+        param("Auto-Shrink", "9999/10003/13260/3296675261/2/370", "3 (To All Margins)")
+
+    private fun Node.alignBlockCenter() =
+        param("Alignment", "9999/10003/13260/3296675261/2/354/3296667395/401", "1 (Center)")
+
+    private fun Node.alignTopLeft() =
+        param("Alignment", "9999/10003/13260/3296675261/2/373", "0 (Left) 0 (Top)")
+
+    private fun Node.alignMiddleLeft() =
+        param("Alignment", "9999/10003/13260/3296675261/2/373", "0 (Left) 1 (Middle)")
+
+    private fun Node.backgroundOpacity(value: String = "0") =
+        param("Background Opacity", "9999/10003/3296541111/3296541115/1/200/202", value)
+
+
     private fun Node.asset(name: String, block: Node.() -> Unit = {}): Node = "asset" {
         attribute("id", assetId)
         attribute("name", name)
@@ -225,7 +263,13 @@ class FCPXMLGenerator(
         }
     }
 
-    private fun Node.title(titleText: String, sectionStart: String, durStr: String, lane: Int, block: Node.() -> Unit = {}) {
+    private fun Node.title(
+        titleText: String,
+        sectionStart: String,
+        durStr: String,
+        lane: Int,
+        block: Node.() -> Unit = {}
+    ) {
         "title" {
             attribute("name", titleText)
             attribute("lane", lane.toString())
