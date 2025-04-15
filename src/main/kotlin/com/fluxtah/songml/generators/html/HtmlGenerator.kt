@@ -5,7 +5,7 @@ import com.fluxtah.songml.model.ParsedLine
 import com.fluxtah.songml.model.Song
 import com.fluxtah.songml.model.Token
 
-class HtmlGenerator(private val song: Song) {
+class HtmlGenerator(private val song: Song, private val condensed: Boolean = true) {
     fun generate(): String {
         val title: String? = song.extra["Title"] ?: "SongML Export"
 
@@ -26,6 +26,7 @@ class HtmlGenerator(private val song: Song) {
                         .textline { font-family: monospace; white-space: pre; }
                         .hold { color: #999; }
                         .rest { color: #cc0000; font-style: italic; }
+                        .ellipsis { font-style: italic; color: #999; }
                     </style>
                 </head>
                 <body>
@@ -35,7 +36,14 @@ class HtmlGenerator(private val song: Song) {
 
             for (section in song.sections) {
                 append("<h2>[${section.name} ${section.bars} bars]</h2>\n")
-                for (line in section.lines) {
+
+                val linesToRender = if (condensed) {
+                    listOfNotNull(section.lines.firstOrNull { it is ParsedLine.TextLine })
+                } else {
+                    section.lines
+                }
+
+                for (line in linesToRender) {
                     when (line) {
                         is ParsedLine.ChordLine -> {
                             append("<div class=\"line-pair\">")
@@ -70,6 +78,10 @@ class HtmlGenerator(private val song: Song) {
                             append("<div class=\"chordline\">${chords.toString().trim()}</div>\n")
                             append("<div class=\"textline\">${lyrics.toString().trim()}</div>\n")
                             append("</div>\n")
+
+                            if (condensed) {
+                                append("<div class=\"ellipsis\">...</div>\n")
+                            }
                         }
                     }
                 }

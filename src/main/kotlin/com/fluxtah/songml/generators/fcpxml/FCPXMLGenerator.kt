@@ -55,7 +55,7 @@ class FCPXMLGenerator(
 
                                     title(section.name, sectionStart, durStr, lane = 0) {
                                         backgroundOpacity()
-                                        alignTopLeft()
+                                        alignTopCenter()
                                         text {
                                             textStyle(sectionStyleId, section.name)
                                         }
@@ -191,6 +191,9 @@ class FCPXMLGenerator(
 
     private fun Node.alignTopLeft() =
         param("Alignment", "9999/10003/13260/3296675261/2/373", "0 (Left) 0 (Top)")
+
+    private fun Node.alignTopCenter() =
+        param("Alignment", "9999/10003/13260/3296675261/2/373", "1 (Center) 0 (Top)")
 
     private fun Node.alignMiddleLeft() =
         param("Alignment", "9999/10003/13260/3296675261/2/373", "0 (Left) 1 (Middle)")

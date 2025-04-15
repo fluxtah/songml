@@ -16,7 +16,7 @@
 						<asset-clip name="royal_soldier.mp3" offset="0s" ref="a1" duration="8956/30s" start="0s" lane="-1"/>
 						<title name="Lead In" lane="0" offset="0/30s" duration="351/30s" ref="r2">
 							<param name="Background Opacity" key="9999/10003/3296541111/3296541115/1/200/202" value="0"/>
-							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="0 (Left) 0 (Top)"/>
+							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="1 (Center) 0 (Top)"/>
 							<text>
 								<text-style ref="ts_sec0">
 									Lead In
@@ -37,7 +37,7 @@
 						</title>
 						<title name="Intro" lane="0" offset="351/30s" duration="702/30s" ref="r2">
 							<param name="Background Opacity" key="9999/10003/3296541111/3296541115/1/200/202" value="0"/>
-							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="0 (Left) 0 (Top)"/>
+							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="1 (Center) 0 (Top)"/>
 							<text>
 								<text-style ref="ts_sec1">
 									Intro
@@ -60,7 +60,7 @@
 						</title>
 						<title name="Bridge" lane="0" offset="1054/30s" duration="702/30s" ref="r2">
 							<param name="Background Opacity" key="9999/10003/3296541111/3296541115/1/200/202" value="0"/>
-							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="0 (Left) 0 (Top)"/>
+							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="1 (Center) 0 (Top)"/>
 							<text>
 								<text-style ref="ts_sec2">
 									Bridge
@@ -91,7 +91,7 @@ Him chant a [D] left and a right and a [G] left and a right
 						</title>
 						<title name="Verse" lane="0" offset="1756/30s" duration="702/30s" ref="r2">
 							<param name="Background Opacity" key="9999/10003/3296541111/3296541115/1/200/202" value="0"/>
-							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="0 (Left) 0 (Top)"/>
+							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="1 (Center) 0 (Top)"/>
 							<text>
 								<text-style ref="ts_sec3">
 									Verse
@@ -128,7 +128,7 @@ For the [D] queen for [G] England…
 						</title>
 						<title name="Chorus" lane="0" offset="2459/30s" duration="702/30s" ref="r2">
 							<param name="Background Opacity" key="9999/10003/3296541111/3296541115/1/200/202" value="0"/>
-							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="0 (Left) 0 (Top)"/>
+							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="1 (Center) 0 (Top)"/>
 							<text>
 								<text-style ref="ts_sec4">
 									Chorus
@@ -157,7 +157,7 @@ Yes him a royal [D] soldier, for the [G] crown and kingdom
 						</title>
 						<title name="Post-Chorus Bridge" lane="0" offset="3161/30s" duration="351/30s" ref="r2">
 							<param name="Background Opacity" key="9999/10003/3296541111/3296541115/1/200/202" value="0"/>
-							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="0 (Left) 0 (Top)"/>
+							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="1 (Center) 0 (Top)"/>
 							<text>
 								<text-style ref="ts_sec5">
 									Post-Chorus Bridge
@@ -180,7 +180,7 @@ Yes him a royal [D] soldier, for the [G] crown and kingdom
 						</title>
 						<title name="Bridge" lane="0" offset="3512/30s" duration="702/30s" ref="r2">
 							<param name="Background Opacity" key="9999/10003/3296541111/3296541115/1/200/202" value="0"/>
-							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="0 (Left) 0 (Top)"/>
+							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="1 (Center) 0 (Top)"/>
 							<text>
 								<text-style ref="ts_sec6">
 									Bridge
@@ -213,7 +213,7 @@ My fada used to [D] chant pon de [Am] microphone
 						</title>
 						<title name="Verse" lane="0" offset="4215/30s" duration="351/30s" ref="r2">
 							<param name="Background Opacity" key="9999/10003/3296541111/3296541115/1/200/202" value="0"/>
-							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="0 (Left) 0 (Top)"/>
+							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="1 (Center) 0 (Top)"/>
 							<text>
 								<text-style ref="ts_sec7">
 									Verse
@@ -242,7 +242,7 @@ See the squaddie [G] yeh deh waitin pon di next mission
 						</title>
 						<title name="Verse" lane="0" offset="4566/30s" duration="351/30s" ref="r2">
 							<param name="Background Opacity" key="9999/10003/3296541111/3296541115/1/200/202" value="0"/>
-							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="0 (Left) 0 (Top)"/>
+							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="1 (Center) 0 (Top)"/>
 							<text>
 								<text-style ref="ts_sec8">
 									Verse
@@ -271,7 +271,7 @@ Yeh deh waiting pon na [G] call to deploy the squadron
 						</title>
 						<title name="Chorus" lane="0" offset="4917/30s" duration="702/30s" ref="r2">
 							<param name="Background Opacity" key="9999/10003/3296541111/3296541115/1/200/202" value="0"/>
-							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="0 (Left) 0 (Top)"/>
+							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="1 (Center) 0 (Top)"/>
 							<text>
 								<text-style ref="ts_sec9">
 									Chorus
@@ -308,7 +308,7 @@ For the [G] crown and kingdom
 						</title>
 						<title name="Post-Chorus Bridge" lane="0" offset="5620/30s" duration="351/30s" ref="r2">
 							<param name="Background Opacity" key="9999/10003/3296541111/3296541115/1/200/202" value="0"/>
-							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="0 (Left) 0 (Top)"/>
+							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="1 (Center) 0 (Top)"/>
 							<text>
 								<text-style ref="ts_sec10">
 									Post-Chorus Bridge
@@ -331,7 +331,7 @@ For the [G] crown and kingdom
 						</title>
 						<title name="Interlude" lane="0" offset="5971/30s" duration="702/30s" ref="r2">
 							<param name="Background Opacity" key="9999/10003/3296541111/3296541115/1/200/202" value="0"/>
-							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="0 (Left) 0 (Top)"/>
+							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="1 (Center) 0 (Top)"/>
 							<text>
 								<text-style ref="ts_sec11">
 									Interlude
@@ -354,7 +354,7 @@ For the [G] crown and kingdom
 						</title>
 						<title name="Bridge" lane="0" offset="6673/30s" duration="351/30s" ref="r2">
 							<param name="Background Opacity" key="9999/10003/3296541111/3296541115/1/200/202" value="0"/>
-							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="0 (Left) 0 (Top)"/>
+							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="1 (Center) 0 (Top)"/>
 							<text>
 								<text-style ref="ts_sec12">
 									Bridge
@@ -383,7 +383,7 @@ Left, right and [D] left and a [G] attention
 						</title>
 						<title name="Verse" lane="0" offset="7024/30s" duration="702/30s" ref="r2">
 							<param name="Background Opacity" key="9999/10003/3296541111/3296541115/1/200/202" value="0"/>
-							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="0 (Left) 0 (Top)"/>
+							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="1 (Center) 0 (Top)"/>
 							<text>
 								<text-style ref="ts_sec13">
 									Verse
@@ -420,7 +420,7 @@ REST
 						</title>
 						<title name="Bridge" lane="0" offset="7727/30s" duration="351/30s" ref="r2">
 							<param name="Background Opacity" key="9999/10003/3296541111/3296541115/1/200/202" value="0"/>
-							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="0 (Left) 0 (Top)"/>
+							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="1 (Center) 0 (Top)"/>
 							<text>
 								<text-style ref="ts_sec14">
 									Bridge
@@ -449,7 +449,7 @@ Yes at the office them a [D] say you&apos;re only good for infantry
 						</title>
 						<title name="Chorus" lane="0" offset="8078/30s" duration="702/30s" ref="r2">
 							<param name="Background Opacity" key="9999/10003/3296541111/3296541115/1/200/202" value="0"/>
-							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="0 (Left) 0 (Top)"/>
+							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="1 (Center) 0 (Top)"/>
 							<text>
 								<text-style ref="ts_sec15">
 									Chorus
@@ -486,7 +486,7 @@ For the [G] crown and kingdom
 						</title>
 						<title name="Outro" lane="0" offset="8780/30s" duration="176/30s" ref="r2">
 							<param name="Background Opacity" key="9999/10003/3296541111/3296541115/1/200/202" value="0"/>
-							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="0 (Left) 0 (Top)"/>
+							<param name="Alignment" key="9999/10003/13260/3296675261/2/373" value="1 (Center) 0 (Top)"/>
 							<text>
 								<text-style ref="ts_sec16">
 									Outro
