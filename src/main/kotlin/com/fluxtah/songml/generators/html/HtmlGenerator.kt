@@ -1,12 +1,13 @@
 package com.fluxtah.songml.generators.html
 
 
+import com.fluxtah.songml.generators.Generator
 import com.fluxtah.songml.model.ParsedLine
 import com.fluxtah.songml.model.Song
 import com.fluxtah.songml.model.Token
 
-class HtmlGenerator(private val song: Song, private val condensed: Boolean = true) {
-    fun generate(): String {
+class HtmlGenerator(private val song: Song, private val condensed: Boolean = true) : Generator {
+    override fun generate(): String {
         val title: String? = song.extra["Title"] ?: "SongML Export"
 
         return buildString {

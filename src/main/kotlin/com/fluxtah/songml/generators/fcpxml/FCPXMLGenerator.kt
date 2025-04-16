@@ -1,5 +1,6 @@
 package com.fluxtah.songml.generators.fcpxml
 
+import com.fluxtah.songml.generators.Generator
 import com.fluxtah.songml.model.ParsedLine
 import com.fluxtah.songml.model.Song
 import com.fluxtah.songml.model.TempoInfo
@@ -15,7 +16,7 @@ class FCPXMLGenerator(
     val fps: Double = 30.0,
     val includeLyrics: Boolean = true,
     val includeChords: Boolean = true
-) {
+) : Generator {
 
     val barDuration = getBarDuration(song)
     val totalDuration = song.totalBars * barDuration
@@ -23,7 +24,7 @@ class FCPXMLGenerator(
     val formatId = FORMAT_ID
     val assetId = ASSET_ID
 
-    fun generate(): String {
+    override fun generate(): String {
         return xml("fcpxml", version = XmlVersion.V10, encoding = "UTF-8") {
             attribute("version", "1.13")
             doctype("fcpxml")
@@ -132,7 +133,6 @@ class FCPXMLGenerator(
             text(titleText)
         }
     }
-
 
     private fun Node.assetClip() {
         audioFilename?.let { name ->

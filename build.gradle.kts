@@ -25,6 +25,8 @@ repositories {
 
 dependencies {
     implementation("org.redundent:kotlin-xml-builder:1.9.3")
+    implementation("com.github.ajalt.clikt:clikt:3.5.2")
+
     testImplementation(kotlin("test"))
 }
 

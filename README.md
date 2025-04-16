@@ -17,9 +17,9 @@ It parses structured song files with sections, chords, lyrics, repeats, and timi
 - Clean lexer-style tokenizer (no regex)
 - Calculates tempo, total bars, and section timings
 - Generates:
-  - 🎬 FCPXML overlays for Final Cut Pro
-  - 📝 HTML lead sheets with aligned chords and lyrics
-- Runnable via CLI or programmatically
+  - 🎮 FCPXML overlays for Final Cut Pro
+  - 📜 HTML lead sheets with aligned chords and lyrics
+- Runnable via CLI or programmatically using subcommands
 
 ---
 
@@ -36,7 +36,7 @@ Mi fada used to {D}chant pon da {Am}microphone
 
 ---
 
-## 📦 Example Output
+## 📆 Example Output
 
 ```
 [Verse 8 bars]
@@ -62,20 +62,33 @@ Covers chords, lyrics, repeats, section headers, metadata, and more.
 
 ```bash
 ./gradlew shadowJar
-java -jar build/libs/songml-all.jar --input song.txt --format fcpxml
+java -jar build/libs/songml-all.jar fcpxml --input song.txt
 ```
 
 Optionally specify output path:
 
 ```bash
-java -jar build/libs/songml-all.jar --input song.txt --format fcpxml --output song.fcpxml
+java -jar build/libs/songml-all.jar fcpxml --input song.txt --output song.fcpxml
+```
+
+You can also generate HTML:
+
+```bash
+java -jar build/libs/songml-all.jar html --input song.txt
+```
+
+You can generate from a directory of `.txt` SongML files:
+
+```bash
+songml fcpxml --input ./songs --output ./output
+songml html --input ./songs --output ./output
 ```
 
 ---
 
-## 🎨 Output Formats (WIP)
+## 🎨 Output Formats
 
-| Format   | Description                             | Output File       |
+| Command  | Description                             | Output File       |
 |----------|-----------------------------------------|-------------------|
 | `fcpxml` | Final Cut Pro overlay titles             | `.fcpxml`         |
 | `html`   | Aligned chord/lyric HTML lead sheet     | `.html`           |
@@ -96,7 +109,7 @@ brew install songml
 Then run:
 
 ```bash
-songml --input my_song.txt --format fcpxml
+songml fcpxml --input my_song.txt
 ```
 
 > 💡 Requires Java 17+. You can install it with:
